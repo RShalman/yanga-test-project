@@ -1,0 +1,14 @@
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 300px;
+
+  & h2 {
+    flex: 1 100%;
+  }
+
+  & .formController {
+    flex: 1 100%;
+    margin: 30px 0;
+  }
+}

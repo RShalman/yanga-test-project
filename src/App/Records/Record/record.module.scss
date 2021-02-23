@@ -1,0 +1,23 @@
+.wrapper {
+  margin: 40px;
+  max-width: 170px;
+
+  & .avatar {
+    height: 180px;
+
+    & img {
+      width: 100%;
+    }
+  }
+
+  & .info {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+
+    & .text {
+      margin: 5px;
+      margin-left: 0px;
+    }
+  }
+}

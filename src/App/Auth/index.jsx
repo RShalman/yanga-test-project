@@ -51,7 +51,7 @@ const Auth = ({setIsAuth}) => {
         {auth.map(authField => {
             const {type, value, error} = authField
 
-            return <FormControl className={S.formController} error={error} required>
+            return <FormControl key={type} className={S.formController} error={error} required>
                 <InputLabel htmlFor={type}>{type}</InputLabel>
                 <Input
                     id={type}
@@ -62,7 +62,7 @@ const Auth = ({setIsAuth}) => {
                 {error && <FormHelperText>{`Incorrect ${type}`}</FormHelperText>}
             </FormControl>
         })}
-        <Button variant="outlined" color="primary" disabled={isSubmitDisabled} onClick={onSubmit}>Submit</Button>
+        <Button variant="contained" color="primary" disabled={isSubmitDisabled} onClick={onSubmit}>Submit</Button>
     </div>
 }
 
